@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.number-text-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: all 0.5s ease;
+}
+
+.number {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.text-field {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+    .text-field::placeholder {
+        color: #999;
+    }
+
+    .text-field.completed {
+        background-color: #e0e0e0;
+        color: #666;
+        border: 1px solid #999;
+    }
+
+.complete-checkbox {
+    margin-left: 10px;
+}
+
+.completed-effect {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
